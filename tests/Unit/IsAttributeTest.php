@@ -38,7 +38,7 @@ it('defines the target match constants', function (string $name, int $value) {
     expect(constant($name))->toEqual($value);
 })->with([
     ['TARGET_MATCH_EQUALS', 1],
-    ['TARGET_MATCH_INCLUDES', 2]
+    ['TARGET_MATCH_INCLUDES', 2],
 ]);
 
 it('defines the target match constants as powers of 2', function (string $name) {
@@ -49,5 +49,5 @@ it('defines the target match constants as powers of 2', function (string $name) 
     expect($isPowerOfTwo)->toBeTrue();
 })->with([
     'TARGET_MATCH_EQUALS',
-    'TARGET_MATCH_INCLUDES'
+    'TARGET_MATCH_INCLUDES',
 ]);

@@ -1,19 +1,25 @@
 {
     "name": "reedware/is-attribute",
-    "version": "1.0",
     "description": "Adds truth test helper for checking if class is an attribute.",
+    "keywords": [
+        "php",
+        "attributes",
+        "is-attribute"
+    ],
+    "license": "MIT",
     "authors": [
         {
             "name": "Tyler Reed",
             "email": "tylernathanreed@gmail.com"
         }
     ],
-    "license": "MIT",
     "require": {
         "php": ">=8.0"
     },
     "require-dev": {
-        "pestphp/pest": "^2.6"
+        "laravel/pint": "^1.10",
+        "pestphp/pest": "^2.6",
+        "phpstan/phpstan": "^1.4.7"
     },
     "autoload": {
         "files": [
@@ -25,9 +31,19 @@
             "Reedware\\IsAttribute\\Tests\\": "tests/"
         }
     },
+    "minimum-stability": "stable",
     "config": {
+        "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "test:lint": "pint --test",
+        "test:lint-fix": "pint",
+        "test:unit": "pest",
+        "test:coverage": "pest --coverage --min=100",
+        "test:static": "phpstan",
+        "test:all": "composer test:lint && composer test:unit && composer test:coverage && composer test:static"
     }
 }

@@ -7,5 +7,5 @@ use Attribute;
 #[Attribute(Attribute::TARGET_ALL)]
 class AllAttribute
 {
-
+    //
 }

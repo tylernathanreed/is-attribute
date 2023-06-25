@@ -44,9 +44,20 @@ if (! function_exists('is_attribute')) {
             $argument = $arguments[0];
 
             return match ($match) {
+                // Must be an exact match
                 TARGET_MATCH_EQUALS => $target === $argument,
+
+                // Must include all of the specified targets
                 TARGET_MATCH_INCLUDES => ($target & $argument) === $target,
-                TARGET_MATCH_ANY => ($target & $argument) > 0
+
+                // Must include at least one of the specified targets
+                TARGET_MATCH_ANY => ($target & $argument) > 0,
+
+                // Unknown match operator
+                default => throw new InvalidArgumentException(sprintf(
+                    'Undefined target match constant [%s].',
+                    $match
+                ))
             };
         }
 
