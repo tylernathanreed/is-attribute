@@ -1,10 +1,10 @@
 # Is Attribute
 
-[![Automated Tests](https://github.com/tylernathanreed/container-testcase/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/container-testcase/actions/workflows/tests.yml)
-[![Coding Standards](https://github.com/tylernathanreed/container-testcase/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/container-testcase/actions/workflows/coding-standards.yml)
-[![Code Coverage](https://github.com/tylernathanreed/container-testcase/actions/workflows/coverage.yml/badge.svg)](https://github.com/tylernathanreed/container-testcase/actions/workflows/coverage.yml)
-[![Static Analysis](https://github.com/tylernathanreed/container-testcase/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/tylernathanreed/container-testcase/actions/workflows/static-analysis.yml)
-[![Latest Stable Version](https://poser.pugx.org/reedware/container-testcase/v/stable)](https://packagist.org/packages/reedware/container-testcase)
+[![Automated Tests](https://github.com/tylernathanreed/is-attribute/actions/workflows/tests.yml/badge.svg)](https://github.com/tylernathanreed/is-attribute/actions/workflows/tests.yml)
+[![Coding Standards](https://github.com/tylernathanreed/is-attribute/actions/workflows/coding-standards.yml/badge.svg)](https://github.com/tylernathanreed/is-attribute/actions/workflows/coding-standards.yml)
+[![Code Coverage](https://github.com/tylernathanreed/is-attribute/actions/workflows/coverage.yml/badge.svg)](https://github.com/tylernathanreed/is-attribute/actions/workflows/coverage.yml)
+[![Static Analysis](https://github.com/tylernathanreed/is-attribute/actions/workflows/static-analysis.yml/badge.svg)](https://github.com/tylernathanreed/is-attribute/actions/workflows/static-analysis.yml)
+[![Latest Stable Version](https://poser.pugx.org/reedware/is-attribute/v/stable)](https://packagist.org/packages/reedware/is-attribute)
 
 This package adds a truth test helper for checking if class is an attribute.
 
